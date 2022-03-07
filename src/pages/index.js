@@ -1,4 +1,5 @@
 import Orbiton, { append } from "orbiton";
+import "../styles/index.css"
 
 function App(props) {
   const style = {
@@ -7,9 +8,12 @@ function App(props) {
     textAlign: "center"
   }
   return (
-    <div style={style} >
-      <h1>Welcome To <span>Orbiton JS</span>.</h1>
-      <p>Edit <code>src/pages/index.js</code></p>
+    <div className="app">
+      <div style={style} >
+        <h1>Welcome To the <span className="highlight">Orbiton</span> Template.</h1>
+        <p>Edit <code className="codepage">src/pages/index.js</code></p>
+        <p>You can visit the <code><a href="https://orbiton.js.org">Official Documentation</a> </code>to Learm Orbiton</p>
+      </div>
     </div>
   )
 }
